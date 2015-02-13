@@ -13,7 +13,7 @@ Technology Stack
 
 [TripleSec](https://github.com/keybase/triplesec) - For enc/decryption
 
-[MochaJS]() - For testing
+[MochaJS]() & [ChaiJS]() - For testing
 
 How does it work?
 -----------------
