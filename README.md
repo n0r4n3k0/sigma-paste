@@ -5,11 +5,15 @@
 
 Technology Stack
 ----------------
-[Node.js](http://nodejs.org/)
+[Node.js](http://nodejs.org/) - For serving
 
-[Express.js](http://expressjs.com/)
+[Express.js](http://expressjs.com/) - For routing
 
-[TripleSec](https://github.com/keybase/triplesec)
+[Handlebars]() - For templating
+
+[TripleSec](https://github.com/keybase/triplesec) - For enc/decryption
+
+[MochaJS]() - For testing
 
 How does it work?
 -----------------

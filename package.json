@@ -2,12 +2,15 @@
   "name": "Epaste",
   "version": "1.0.0",
   "description": "∑paste is an lpaste clone utilizing symmetric keys for sharing encrypted messages",
-  "main": "index.js",
+  "main": "∑paste.js",
   "dependencies": {
     "express": "^4.11.2",
+    "express-handlebars": "^1.1.0",
     "triplesec": "^3.0.19"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
