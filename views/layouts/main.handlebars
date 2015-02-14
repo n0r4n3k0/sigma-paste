@@ -6,10 +6,38 @@
     <link rel="stylesheet" href="/vendor/mocha.css">
   {{/if}}
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/css/∑.css'>
   <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
 </head>
 <body>
-  {{{body}}}
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbarcollapsemenu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">∑</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarcollapsemenu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about">About ∑paste</a></li>
+            <li><a href="mailto:jessestephenbrown@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    {{{body}}}
+  </div>
+  <footer class="footer" style="margin-top: 200px">
+    <p>Disclaimer: Use at your own risk. This is not super secure, and is merely a toy designed for a university class.</p>
+  </footer>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   {{#if showTests}}
     <div id="mocha"></div>

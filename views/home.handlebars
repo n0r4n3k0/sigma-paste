@@ -1,1 +1,32 @@
-<h1>Home nubs</h1>
+<form action="/submit" method="POST">
+  <div class="form-group">
+    <input
+      type="text"
+      id="title"
+      name="title"
+      placeholder="Title">
+    <input
+      type="text"
+      id="author"
+      name="author"
+      placeholder="Author">
+    <select name="language">
+      {{#each languages}}
+        <option value="{{.}}">{{.}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <textarea
+    class="pastebin"
+    cols='100'
+    name='pastearea'
+    rows='20'
+    placeholder="Enter plaintext here"
+    required
+    wrap="hard">
+  </textarea>
+  <div class="form-group">
+    <input type="text" id="key" name="key" placeholder="Key" required>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+</form>
