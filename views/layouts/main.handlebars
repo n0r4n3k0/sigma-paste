@@ -10,6 +10,7 @@
 </head>
 <body>
   {{{body}}}
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   {{#if showTests}}
     <div id="mocha"></div>
     <script src="/vendor/mocha.js"></script>
@@ -19,11 +20,10 @@
       var assert = chai.assert;
     </script>
     <script src="/qa/tests-global.js"></script>
-    {{#if pageTestScript}}
-      <script src"{{pageTestScript}}"></script>
-    {{/if}}
+      {{#if pageTestScript}}
+        <script src="{{pageTestScript}}"></script>
+      {{/if}}
     <script>mocha.run();</script>
   {{/if}}
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>

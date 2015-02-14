@@ -10,11 +10,13 @@
   },
   "devDependencies": {
     "chai": "^2.0.0",
+    "grunt": "^0.4.5",
     "mocha": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesse Stephen Brown",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true
 }
