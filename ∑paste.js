@@ -1,6 +1,6 @@
 var express = require('express');
 var fortune = require('./lib/fortune.js');
-var languages = require('./lib/languages.js');
+// var languages = require('./lib/languages.js');
 var triplesec = require('triplesec');
 var credentials = require('./credentials.js');
 var Encryptor = triplesec.Encryptor;
@@ -47,7 +47,7 @@ app.use(function(req, res, next){
 
 app.get('/', function(req, res){
   res.render('home', {
-    languages: languages,
+    // languages: languages,
     pageTestScript: '/qa/tests-home.js'
   });
 });
@@ -98,7 +98,9 @@ app.post('/decode', function(req, res){
         res.render('404');
       } else {
         cleartext = plaintext.toString();
-        res.send(cleartext);
+        res.render('decode', {
+          cleartext: cleartext
+        });
       }
     });
   });
