@@ -34,7 +34,7 @@ decrypted message.
 
 Notes
 -----
-This relies on https encryption to keep the plaintext from view as it is sent from
+This relies on https encryption (not yet implemented) to keep the plaintext from view as it is sent from
 the server to the client. Please also note that this uses symmetric cryptography,
 that is, the key used to decrypt the message is the same as the one used to encrypt
 the message, meaning that the sender and receiver must share the key but keep it
