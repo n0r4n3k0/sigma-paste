@@ -1,0 +1,14 @@
+<h1>A paste titled {{paste.title}}, by {{paste.author}}</h1>
+<form action='/decode' method='POST'>
+  <input type=hidden name='paste' value={{paste.id}}>
+  <textarea
+    class="pastebin"
+    cols='100'
+    name='pastearea'
+    rows='20'
+    wrap="hard">{{paste.pastetext}}</textarea>
+  <div class="form-group">
+    <input type="text" id="key" name="key" placeholder="Key" required>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+</form>
